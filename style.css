@@ -1,0 +1,61 @@
+.animating-paragraph {
+  font-size: 2rem;
+  opacity: 1;
+}
+
+/* These two selectors are used when js runs (Required)
+     You can change animation properties to your liking
+ */
+span.animating-letter {
+  animation: letter-by-letter 5000ms ease-in-out forwards infinite;
+}
+
+span.animating-word {
+  animation: word-by-word 1000ms ease-in-out forwards;
+}
+
+/* Animation keyframes (Required) */
+@keyframes letter-by-letter {
+  /* This is an example letter-by-letter-animation.
+       replace this with your own */
+
+  0% {
+    background-color: hsl(0, 75%, 75%);
+    color: hsl(0, 75%, 20%);
+  }
+  16.6% {
+    background-color: hsl(60, 75%, 75%);
+    color: hsl(60, 75%, 20%);
+  }
+  33.3% {
+    background-color: hsl(120, 75%, 75%);
+    color: hsl(120, 75%, 20%);
+  }
+  50% {
+    background-color: hsl(180, 75%, 75%);
+    color: hsl(180, 75%, 20%);
+  }
+  66.6% {
+    background-color: hsl(240, 75%, 75%);
+    color: hsl(240, 75%, 20%);
+  }
+  83.3% {
+    background-color: hsl(300, 75%, 75%);
+    color: hsl(300, 75%, 20%);
+  }
+  100% {
+    background-color: hsl(360, 75%, 75%);
+    color: hsl(360, 75%, 20%);
+  }
+}
+
+@keyframes word-by-word {
+  /* This is an example word-by-word-animation.
+       replace this with your own */
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
