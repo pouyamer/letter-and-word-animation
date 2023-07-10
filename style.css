@@ -14,6 +14,10 @@ span.animating-word {
   animation: word-by-word 1000ms ease-in-out forwards;
 }
 
+span.animating-sentence {
+  animation: sentence-by-sentence 1000ms ease-in-out forwards infinite;
+}
+
 /* Animation keyframes (Required) */
 @keyframes letter-by-letter {
   /* This is an example letter-by-letter-animation.
@@ -57,5 +61,39 @@ span.animating-word {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes sentence-by-sentence {
+  /* This is an example sentence-by-sentence-animation.
+       replace this with your own */
+
+  0% {
+    background-color: hsl(0, 75%, 75%);
+    color: hsl(0, 75%, 20%);
+  }
+  16.6% {
+    background-color: hsl(60, 75%, 75%);
+    color: hsl(60, 75%, 20%);
+  }
+  33.3% {
+    background-color: hsl(120, 75%, 75%);
+    color: hsl(120, 75%, 20%);
+  }
+  50% {
+    background-color: hsl(180, 75%, 75%);
+    color: hsl(180, 75%, 20%);
+  }
+  66.6% {
+    background-color: hsl(240, 75%, 75%);
+    color: hsl(240, 75%, 20%);
+  }
+  83.3% {
+    background-color: hsl(300, 75%, 75%);
+    color: hsl(300, 75%, 20%);
+  }
+  100% {
+    background-color: hsl(360, 75%, 75%);
+    color: hsl(360, 75%, 20%);
   }
 }
